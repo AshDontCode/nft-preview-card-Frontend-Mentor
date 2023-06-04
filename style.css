@@ -1,0 +1,113 @@
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --bodyBack: hsl(217, 54%, 11%);
+    --cardDarkBlue : hsl(216, 50%, 16%);
+    --textDarkBlue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bodyBack);
+  
+}
+
+.wrapper
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    background-color: var(--cardDarkBlue);
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Outfit', sans-serif;
+    box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.44);
+}
+
+.flex-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flex-wrapper .equili{
+    border-radius: 20px;
+}
+.flex-wrapper h2{
+    color: white;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.flex-wrapper p{
+    color: var(--Softblue);  
+}
+
+.img-container{
+    width: 100%;
+    z-index: 2;
+    cursor: pointer;
+}
+.img-container img{
+    z-index: 1;
+}
+
+.view, .view2{
+    position: absolute;
+    bottom:46%;
+    width: 89%;
+    height: 51%;
+    border-radius: 20px;
+    background-image: url(images/icon-view.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.view2{
+    background-color: rgba(0, 255, 255, 0.449);
+}
+
+
+
+.ethereum{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+
+.ethereum-first span{
+    color: var(--Cyan);
+    font-weight: 600;
+    margin:10px 0px 0px 5px;
+}
+
+.ethereum-second{
+    color: var(--Softblue);
+    font-weight: 400;
+}
+
+.line{
+    border: 1px solid var(--textDarkBlue);
+}
+
+.about-author{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    color: var(--Softblue);
+}
+.about-author img{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.name{
+    color:white;
+    cursor: pointer;
+}
